@@ -1,0 +1,131 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  --yetl-black: #121212;
+  --yetl-cream: #f5f1eb;
+  --yetl-accent: #8f4ddf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--yetl-cream);
+  color: var(--yetl-black);
+}
+
+main {
+  padding: 2.5rem 6vw 4rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 6vw;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--yetl-black);
+}
+
+.hero {
+  background: linear-gradient(120deg, #fff, #eee7f7);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  background: #f1e9ff;
+  color: var(--yetl-accent);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background: var(--yetl-black);
+  color: white;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #ede7f6;
+  color: var(--yetl-black);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.table th {
+  background: #f7f4fb;
+  font-weight: 600;
+}
+
+.highlight {
+  color: var(--yetl-accent);
+}
